@@ -23,6 +23,7 @@ class Index extends React.Component{
                 <br />
                 <Button type="text">Text Button</Button>
                 <Button type="link">Link Button</Button>
+                <Button type="primary">12345</Button>
             </div>
         );
     }
