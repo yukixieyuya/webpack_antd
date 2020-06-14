@@ -1,5 +1,5 @@
 import React from "react";
-import { Checkbox, Card, Divider} from 'antd';
+import {Breadcrumb} from 'antd';
 import CheckBoxPanel from "../../components/CheckBoxPanel";
 import { Route, Redirect, Switch, withRouter, Link} from 'react-router-dom'
 // import routes from "../../plugins/router";
@@ -7,10 +7,14 @@ import routes from "./routes";
 import Demo from '../Demo'
 
 class Index extends React.Component{
-
     render() {
         return (
             <div>
+                <Breadcrumb style={{ margin: '16px 0' }}>
+                    <Breadcrumb.Item>Home</Breadcrumb.Item>
+                    <Breadcrumb.Item>submenu1</Breadcrumb.Item>
+                    <Breadcrumb.Item>demo1</Breadcrumb.Item>
+                </Breadcrumb>
                 <Switch>
                     {
                         routes.map((c, key) => {

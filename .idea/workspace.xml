@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="718d05f2-5285-4e83-b04f-16882ad96726" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/First.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/First.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/List/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/List/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/menuItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/menuItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/Home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\HTML5\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
