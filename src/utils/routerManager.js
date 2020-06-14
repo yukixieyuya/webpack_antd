@@ -62,7 +62,10 @@ export class Routes {
             this[key] = {
                 title: routes[key].title,
                 url: () => combineUrl(this.pageUrl, routes[key].url),
-                format: (...args) => combineUrl(this.pageUrl, (routes[key].format ? stringFormat(routes[key].format, ...args) : routes[key].url))
+                format: (...args) => combineUrl(this.pageUrl, (routes[key].format ? stringFormat(routes[key].format, ...args) : routes[key].url)),
+                component: () => {
+                    return routes[key].component
+                }
             };
         });
     }

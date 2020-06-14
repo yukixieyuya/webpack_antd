@@ -6,16 +6,16 @@ import List from "../List";
 import { Route, Redirect, Switch, withRouter} from 'react-router-dom'
 class Index extends React.Component{
     Primary = () => {
-        console.log(routes.test)
+        // console.log(routes.test)
         // this.props.history.push()
     }
     render() {
         return (
             <div>
                 <Switch>
-                    <Route path={routes.query.url()} component={Home}></Route>
-                    {/*<Route path={routes.test.url()} component={Test}></Route>*/}
-                    <Route path={routes.date.url()} component={List}></Route>
+                    {/*<Route path={routes.query.url()} component={Home}></Route>*/}
+                    {/*/!*<Route path={routes.test.url()} component={Test}></Route>*!/*/}
+                    {/*<Route path={routes.date.url()} component={List}></Route>*/}
                 </Switch>
                 <Button type="primary" onClick={this.Primary}>Primary Button</Button>
                 <Button>Default Button</Button>

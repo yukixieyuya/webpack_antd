@@ -2,17 +2,31 @@ import React from "react";
 import { Route, Redirect, Switch, withRouter} from 'react-router-dom'
 import {connect} from "react-redux";
 import routes from "../plugins/router";
-import Home from "./Home";
-import List from "./List";
-import Test from "./Test"
 class App extends React.Component {
     render() {
         return (
             <div>
                 <Switch>
-                    <Route path={routes.query.url()} component={Home}></Route>
-                    <Route path={routes.test.url()} component={Test}></Route>
-                    <Route path={routes.date.url()} component={List}></Route>
+                    {
+                        routes.map((c, key) => {
+                            if(c.exact)
+                                return <Route path={c.node} exact key={key}
+                                    render={props => {
+                                    const Component =c.component();
+                                    return (
+                                        <Component {...props}/>
+                                    )}
+                                    }/>;
+                            else
+                                return <Route path={c.node} key={key}
+                                              render={props => {
+                                                  const Component =c.component();
+                                                  return (
+                                                      <Component {...props}/>
+                                                  )}
+                                              }/>;
+                        })
+                    }
                 </Switch>
             </div>
             )

@@ -9,19 +9,19 @@ export const menus = [
                 title: 'demo1',
                 pinyin: 'demo1',
                 key: 'dm1',
-                url: '/query'
+                url: '/home'
             },
             {
                 title: 'demo2',
                 pinyin: 'demo2',
                 key: 'dm2',
-                url: '/test'
+                url: '/list'
             },
             {
                 title: 'demo3',
                 pinyin: 'demo3',
                 key: 'dm3',
-                url: '/date'
+                url: '/test'
             },
             {
                 title: 'demo4',

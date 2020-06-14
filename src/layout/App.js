@@ -35,10 +35,11 @@ class App extends React.Component {
         }
     }
     updateDefaultSelectedKeys = (path) => {
+        const newPath =`/${path.split('/')[1]}`;
         const keyPathLast = window.localStorage.getItem('keyPath');
         const subMenu = menus.find(c => keyPathLast === c.key);
-        const meunPath = subMenu.items.find(c => path === c.url);
-        switch (path) {
+        const meunPath = subMenu.items.find(c => newPath === c.url);
+        switch (newPath) {
             case meunPath.url:
                 return meunPath.key;
             default:

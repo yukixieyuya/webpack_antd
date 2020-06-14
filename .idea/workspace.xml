@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="718d05f2-5285-4e83-b04f-16882ad96726" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Test/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Test/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/menuItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/menuItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/routerManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/routerManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/Home" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\HTML5\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -41,11 +50,11 @@
       <recent name="D:\HTML5\webpack\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\HTML5\demoAntd\src\pages\Home" />
       <recent name="D:\HTML5\demoAntd\src\utils" />
       <recent name="D:\HTML5\demoAntd\src\pages" />
       <recent name="D:\HTML5\webpack\src\components" />
       <recent name="D:\HTML5\webpack\src\assets\css" />
-      <recent name="D:\HTML5\webpack\public\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -94,7 +103,9 @@
       <workItem from="1591519669416" duration="1362000" />
       <workItem from="1591521045170" duration="930000" />
       <workItem from="1592039854252" duration="919000" />
-      <workItem from="1592041063141" duration="18524000" />
+      <workItem from="1592041063141" duration="18719000" />
+      <workItem from="1592070445413" duration="4754000" />
+      <workItem from="1592098281738" duration="7778000" />
     </task>
     <servers />
   </component>
@@ -106,7 +117,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
