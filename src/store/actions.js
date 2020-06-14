@@ -7,7 +7,6 @@ const GETID = (dispatch, id)=>{
 const GETPLAYLIST = (dispatch, id)=>{
     return request.get('http://localhost:10000/playlist/detail?id=' + id).then(
         (data)=>{
-            console.log(data)
             dispatch({type:types.GETPLAYLIST, payload: data.playlist})
             return { err: 0}
         }

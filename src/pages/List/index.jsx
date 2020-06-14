@@ -4,7 +4,6 @@ import { DatePicker } from 'antd';
 
 class List extends React.Component{
     onChange = (date, dateString) => {
-        console.log(date, dateString);
     };
     render() {
         return (

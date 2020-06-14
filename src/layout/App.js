@@ -20,7 +20,7 @@ class App extends React.Component {
         super(props);
         const subKeys = JSON.parse(window.localStorage.getItem('subKeys')) || [];
         if(this.props.location.pathname !== '/') {
-            const key = this.updateDefaultSelectedKeys(this.props.location.pathname) || '1';
+            const key = this.updateDefaultSelectedKeys(this.props.location.pathname) || '';
             this.state = {
                 collapsed: false,
                 selectedKey: key,
@@ -29,8 +29,8 @@ class App extends React.Component {
         } else {
             this.state = {
                 collapsed: false,
-                selectedKey: '1',
-                subKeys
+                selectedKey: '',
+                subKeys: []
             }
         }
     }

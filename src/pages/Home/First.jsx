@@ -56,7 +56,6 @@ class First extends React.Component{
         })
     };
     render () {
-        console.log(routes)
         return (
             <div>
                 <Card>
@@ -80,7 +79,8 @@ class First extends React.Component{
                 <Card>
                     <CheckBoxPanel name="text" isCancel={true} options={options} value={this.state.text} onChange={this.onChangeCheckBoxPanel}/>
                 </Card>
-                <button onClick={() => this.props.history.push('/home/check')}>1234</button>
+                <button onClick={() => this.props.history.push(routes.check.path)}>1234</button>
+                <button onClick={() => this.props.history.push(routes.test.path)}>1234</button>
             </div>
         )
     }

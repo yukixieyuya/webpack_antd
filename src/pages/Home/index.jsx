@@ -15,7 +15,7 @@ class Index extends React.Component{
                     {
                         routes.map((c, key) => {
                             if(c.exact)
-                                return <Route exact path={c.node} key={key}
+                                return <Route exact path={c.path} key={key}
                                               render={props => {
                                                   const Component =c.component();
                                                   return (
@@ -23,9 +23,8 @@ class Index extends React.Component{
                                                   )}
                                               }/>;
                             else
-                                return <Route path={c.node} key={key}
+                                return <Route path={c.path} key={key}
                                               render={props => {
-                                                  console.log(c)
                                                   const Component =c.component();
                                                   return (
                                                       <Component {...props} />

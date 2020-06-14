@@ -44,5 +44,19 @@ export const menus = [
                 url: '/query'
             }
         ]
+    },
+    {
+        title: 'submenu3',
+        pinyin: 'submenu3',
+        key: 's3',
+        icon: 'WindowsOutlined',
+        items: [
+            {
+                title: 'demo13',
+                pinyin: 'demo12',
+                key: 'dm6',
+                url: '/dm12'
+            }
+        ]
     }
 ];
