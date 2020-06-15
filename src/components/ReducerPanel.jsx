@@ -2,7 +2,7 @@ import React, {useReducer, createContext} from 'react';
 import {reducer} from '../pages/reducer';
 import {Button} from "antd";
 import initState from '../pages/state';
-import UseContextPanel from "./useContextPanel";
+import UseContextPanel from "./UseContextPanel";
 export const MyContext = createContext();
 export const ReducerPanel = () => {
     const [state, dispatch] = useReducer(reducer, initState);
