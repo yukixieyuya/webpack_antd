@@ -22,8 +22,8 @@ export const HooksCheckBox = props => {
     const [cancelBtn, setCancelBtn] = useState(false);
     const [isCheck, setIsCheck] = useState(oldFalseObj);
     const [value, setValue] = useState([]);
-    const [trueObj, setTrueObj] = useState(oldTrueObj);
-    const [falseObj, setFalseObj] = useState(oldFalseObj);
+    const [trueObj] = useState(oldTrueObj);
+    const [falseObj] = useState(oldFalseObj);
     const changeCheck = (value, check) => {
         if(value.length > 0) {
             setIndeterminate(true);

@@ -1,11 +1,16 @@
+import {ReducerPanel} from "../../components/ReducerPanel";
+import {Card} from "antd";
+
 const React = require('react');
 class Demo extends React.Component{
     render () {
         return (
             <div>
-                12345
+                <Card>
+                    <ReducerPanel/>
+                </Card>
             </div>
         )
     }
 }
-module.exports = Demo;
+export default Demo;
