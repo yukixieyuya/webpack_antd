@@ -1,5 +1,6 @@
 import {Card, Checkbox, Divider} from "antd";
 import CheckBoxPanel from "../../components/CheckBoxPanel";
+import {HooksCheckBox} from "../../components/HooksCheckBox";
 import { Route, Redirect, Switch, withRouter, Link} from 'react-router-dom'
 const React = require('react');
 import {routes} from './routes'
@@ -33,7 +34,8 @@ class First extends React.Component{
         checkedList: defaultCheckedList,
         indeterminate: true,
         checkAll: false,
-        text: [1, 4]
+        text: [1, 4],
+        value: [1, 3]
     };
     onChange = checkedList => {
         this.setState({
@@ -81,6 +83,10 @@ class First extends React.Component{
                 </Card>
                 <button onClick={() => this.props.history.push(routes.check.path)}>1234</button>
                 <button onClick={() => this.props.history.push(routes.test.path)}>1234</button>
+                <Divider />
+                <Card>
+                    <HooksCheckBox name="value" isCancel={true} options={options} value={this.state.value} onChange={this.onChangeCheckBoxPanel}/>
+                </Card>
             </div>
         )
     }

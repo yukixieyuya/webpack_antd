@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="718d05f2-5285-4e83-b04f-16882ad96726" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/First.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/First.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,25 +28,25 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sdscm/chery/Statistics/stats-web-client" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\HTML5\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\HTML5\demoAntd\src\pages\Home" />
-      <recent name="D:\HTML5\demoAntd\src\utils" />
-      <recent name="D:\HTML5\demoAntd\src\pages" />
-      <recent name="D:\HTML5\webpack\src\components" />
-      <recent name="D:\HTML5\webpack\src\assets\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\HTML5\demoAntd\src\pages\Test" />
       <recent name="D:\HTML5\demoAntd\src\pages\List" />
       <recent name="D:\HTML5\demoAntd\src\pages\Home" />
       <recent name="D:\HTML5\demoAntd\src\utils" />
       <recent name="D:\HTML5\webpack\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\webpack_antd\src\components" />
+      <recent name="D:\HTML5\demoAntd\src\pages\Home" />
+      <recent name="D:\HTML5\demoAntd\src\utils" />
+      <recent name="D:\HTML5\demoAntd\src\pages" />
+      <recent name="D:\HTML5\webpack\src\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -98,6 +98,7 @@
       <workItem from="1592041063141" duration="18719000" />
       <workItem from="1592070445413" duration="4754000" />
       <workItem from="1592098281738" duration="8119000" />
+      <workItem from="1592184905801" duration="7021000" />
     </task>
     <servers />
   </component>
