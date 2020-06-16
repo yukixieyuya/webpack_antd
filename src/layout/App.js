@@ -38,7 +38,7 @@ class App extends React.Component {
         const newPath =`/${path.split('/')[1]}`;
         const keyPathLast = window.localStorage.getItem('keyPath');
         const subMenu = menus.find(c => keyPathLast === c.key);
-        const meunPath = subMenu.items.find(c => newPath === c.url);
+        const meunPath = subMenu.items && subMenu.items.find(c => newPath === c.url);
         switch (newPath) {
             case meunPath.url:
                 return meunPath.key;
@@ -58,7 +58,7 @@ class App extends React.Component {
             selectedKey: options.key
         });
         const subMenu = menus.find(c => keyPath === c.key);
-        const meunPath = subMenu.items.find(c => options.key === c.key);
+        const meunPath = subMenu.items && subMenu.items.find(c => options.key === c.key);
         switch (options.key) {
             case meunPath.key:
                 return this.props.history.push(meunPath.url);
@@ -88,7 +88,7 @@ class App extends React.Component {
                             menus.map(c => (
                                 <SubMenu key={c.key} icon={selectedIcon(c.icon)} title={c.title}>
                                     {
-                                        c.items.map(m => (
+                                        c.items && c.items.map(m => (
                                             <Menu.Item key={m.key}>
                                                 {m.title}
                                             </Menu.Item>

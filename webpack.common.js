@@ -35,10 +35,18 @@ module.exports={
                 use:[{
                     loader:'babel-loader',
                     options:{
-                        presets: ['@babel/preset-env',"@babel/preset-react"],
+                        presets: [['@babel/preset-env',{
+                            targets: {
+                                "edge": "17",
+                                "firefox": "60",
+                                "chrome": "67",
+                                "safari": "11.1",
+                                "ie": "11"
+                            },
+                            useBuiltIns:'usage'
+                        }],"@babel/preset-react"],
                         plugins: ['@babel/plugin-proposal-class-properties',
                             ['import', {libraryName: 'antd', style: 'css'}]
-
                         ]
                     }
                 }]

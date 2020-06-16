@@ -9,11 +9,11 @@ export default props => {
     const path = `/${pathArr[1]}`;
 
     const renderBreadcrumb = () => {
-        breadcrumbs.push(<Breadcrumb.Item key={'home'}>首页</Breadcrumb.Item>)
+        breadcrumbs.push(<Breadcrumb.Item key={'home'}><a href={'/'}>首页</a></Breadcrumb.Item>);
         menus.forEach(c => {
-            const bread = c.items && c.items.find(d => d.url === path)
+            const bread = c.items && c.items.find(d => d.url === path);
             if(bread) {
-                breadcrumbs.push(<Breadcrumb.Item key={'home'}>{c.title}</Breadcrumb.Item>)
+                breadcrumbs.push(<Breadcrumb.Item key={'home'}>{c.title}</Breadcrumb.Item>);
                 breadcrumbs.push(<Breadcrumb.Item key={'home'}><Link to={bread.url}>{bread.title}</Link></Breadcrumb.Item>)
             }
         });

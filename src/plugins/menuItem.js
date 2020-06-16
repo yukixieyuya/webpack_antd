@@ -46,17 +46,23 @@ export const menus = [
         ]
     },
     {
-        title: '目录三',
+        title: 'Bizcharts',
         pinyin: 'submenu3',
         key: 's3',
         icon: 'WindowsOutlined',
         items: [
             {
-                title: 'demo13',
+                title: '图表库',
                 pinyin: 'demo12',
                 key: 'dm6',
-                url: '/dm12'
+                url: '/bizcharts'
             }
         ]
+    },
+    {
+        title: 'ceshi',
+        pinyin: 'ceshi',
+        key: 's4',
+        icon: 'WindowsOutlined'
     }
 ];
