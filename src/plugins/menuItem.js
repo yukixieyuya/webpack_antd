@@ -1,30 +1,30 @@
 export const menus = [
     {
-        title: 'submenu1',
+        title: '目录一',
         pinyin: 'submenu1',
         key: 's1',
         icon: 'AppleOutlined',
         items: [
             {
-                title: 'demo1',
+                title: '第一个呀',
                 pinyin: 'demo1',
                 key: 'dm1',
-                url: '/home'
+                url: '/demo1'
             },
             {
-                title: 'demo2',
+                title: '第二个呀',
                 pinyin: 'demo2',
                 key: 'dm2',
                 url: '/list'
             },
             {
-                title: 'demo3',
+                title: '第三个呀',
                 pinyin: 'demo3',
                 key: 'dm3',
                 url: '/test'
             },
             {
-                title: 'demo4',
+                title: '第四个呀',
                 pinyin: 'demo4',
                 key: 'dm4',
                 url: '/demo'
@@ -32,13 +32,13 @@ export const menus = [
         ]
     },
     {
-        title: 'submenu2',
+        title: '目录二',
         pinyin: 'submenu2',
         key: 's2',
         icon: 'WindowsOutlined',
         items: [
             {
-                title: 'demo5',
+                title: '结果',
                 pinyin: 'demo5',
                 key: 'dm5',
                 url: '/query'
@@ -46,7 +46,7 @@ export const menus = [
         ]
     },
     {
-        title: 'submenu3',
+        title: '目录三',
         pinyin: 'submenu3',
         key: 's3',
         icon: 'WindowsOutlined',

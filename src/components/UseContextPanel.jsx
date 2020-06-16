@@ -3,7 +3,6 @@ import {Card,Button} from "antd";
 import { MyContext } from "./ReducerPanel";
 export default props => {
     const { state, dispatch } = useContext(MyContext);
-    console.log(state)
     return (
         <Card>
             <Button type={"primary"} onClick={() => {

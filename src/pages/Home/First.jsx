@@ -1,4 +1,4 @@
-import {Card, Checkbox, Divider} from "antd";
+import {Card, Checkbox, Divider, Button} from "antd";
 import CheckBoxPanel from "../../components/CheckBoxPanel";
 import {HooksCheckBox} from "../../components/HooksCheckBox";
 import { Route, Redirect, Switch, withRouter, Link} from 'react-router-dom'
@@ -81,8 +81,9 @@ class First extends React.Component{
                 <Card>
                     <CheckBoxPanel name="text" isCancel={true} options={options} value={this.state.text} onChange={this.onChangeCheckBoxPanel}/>
                 </Card>
-                <button onClick={() => this.props.history.push(routes.check.path)}>1234</button>
-                <button onClick={() => this.props.history.push(routes.test.path)}>1234</button>
+                <Divider />
+                <Button type="primary" onClick={() => this.props.history.push(routes.check.path)}>子页面一</Button>
+                <Button onClick={() => this.props.history.push(routes.test.path)}>子页面二</Button>
                 <Divider />
                 <Card>
                     <HooksCheckBox name="value" isCancel={true} options={options} value={this.state.value} onChange={this.onChangeCheckBoxPanel}/>

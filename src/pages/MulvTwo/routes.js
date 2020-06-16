@@ -1,23 +1,23 @@
 import {Routes} from '../../utils/routerManager';
-import First from "./First";
-import Two from "./Two";
-import Three from "./Three"
+import Result from "./Result"
+import Spin from "./Spin"
+import Anchor from "./Anchor"
 // import path from 'path';
-const baseUrl = 'demo1';
+const baseUrl = 'query';
 export const routes = new Routes({
-    demo1: {
+    result: {
         url: '/',
-        component: First
+        component: Result
     },
-    check: {
-        url: '/check',
-        title: '滑动输入条',
-        component: Two
+    one: {
+        url: '/one',
+        title: '加载中',
+        component: Spin
     },
-    test: {
-        url: '/test',
-        title: '穿梭框',
-        component: Three
+    anchor: {
+        url: '/anchor',
+        title: '锚点',
+        component: Anchor
     }
 });
 const routeKeys = Object.keys(routes);

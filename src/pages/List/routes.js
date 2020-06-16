@@ -2,22 +2,28 @@ import {Routes} from '../../utils/routerManager';
 import First from "./First";
 import Two from "./Two";
 import Three from "./Three"
+import Four from "./Four"
 // import path from 'path';
-const baseUrl = 'demo1';
+const baseUrl = 'list';
 export const routes = new Routes({
-    demo1: {
+    list: {
         url: '/',
         component: First
     },
     check: {
         url: '/check',
-        title: '滑动输入条',
+        title: '折叠面板',
         component: Two
     },
     test: {
         url: '/test',
-        title: '穿梭框',
+        title: '气泡卡片',
         component: Three
+    },
+    table: {
+        url: '/table',
+        title: '表格',
+        component: Four
     }
 });
 const routeKeys = Object.keys(routes);
