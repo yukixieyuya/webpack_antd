@@ -14,6 +14,9 @@ export default props => {
             <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 1 }}>
                 <Button type="primary" onClick={() => props.history.push(routes.point.path)}>点图</Button>
             </Col>
+            <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 1 }}>
+                <Button type="primary" onClick={() => props.history.push(routes.arc.path)}>弧形链接图</Button>
+            </Col>
         </Row>
     )
 }

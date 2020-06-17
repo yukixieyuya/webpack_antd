@@ -3,6 +3,7 @@ import Bizacharts from "./Bizacharts"
 import Grouped from "./Grouped"
 import Labelline from "./Labelline"
 import Point from './Point';
+import Arc from './Arc';
 const baseUrl = 'bizcharts';
 export const routes = new Routes({
     bizcharts: {
@@ -23,6 +24,11 @@ export const routes = new Routes({
         url: '/point',
         title: '点图',
         component: Point
+    },
+    arc: {
+        url: '/arc',
+        title: '弧形链接图',
+        component: Arc
     }
 });
 const routeKeys = Object.keys(routes);
