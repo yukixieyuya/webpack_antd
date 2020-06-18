@@ -63,6 +63,14 @@ export const menus = [
         title: 'ceshi',
         pinyin: 'ceshi',
         key: 's4',
-        icon: 'WindowsOutlined'
+        icon: 'WindowsOutlined',
+        items: [
+            {
+                title: 'Recoil',
+                pinyin: 'recoil',
+                key: 'dm7',
+                url: '/recoil'
+            }
+        ]
     }
 ];

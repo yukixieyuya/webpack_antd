@@ -5,6 +5,7 @@ import Test from "../pages/Test";
 import Demo from "../pages/Demo";
 import MulvTwo from "../pages/MulvTwo";
 import Bizcharts from "../pages/Bizcharts";
+import Recoil from "../pages/Recoil";
 const routes = new Routes({
     demo1: {
         url: '/',
@@ -36,6 +37,11 @@ const routes = new Routes({
         url: '/',
         title: '图表库',
         component: Bizcharts
+    },
+    recoil: {
+        url: '/',
+        title: 'Recoil',
+        component: Recoil
     },
 });
 const routeKeys = Object.keys(routes);
