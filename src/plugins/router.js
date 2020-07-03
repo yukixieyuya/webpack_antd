@@ -6,6 +6,7 @@ import Demo from "../pages/Demo";
 import MulvTwo from "../pages/MulvTwo";
 import Bizcharts from "../pages/Bizcharts";
 import Recoil from "../pages/Recoil";
+import Freeze from "../pages/Freeze";
 const routes = new Routes({
     demo1: {
         url: '/',
@@ -42,6 +43,11 @@ const routes = new Routes({
         url: '/',
         title: 'Recoil',
         component: Recoil
+    },
+    freeze: {
+        url: '/',
+        title: 'freeze',
+        component: Freeze
     },
 });
 const routeKeys = Object.keys(routes);

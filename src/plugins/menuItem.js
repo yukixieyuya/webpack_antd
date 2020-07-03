@@ -60,7 +60,7 @@ export const menus = [
         ]
     },
     {
-        title: 'ceshi',
+        title: '测试',
         pinyin: 'ceshi',
         key: 's4',
         icon: 'WindowsOutlined',
@@ -70,6 +70,12 @@ export const menus = [
                 pinyin: 'recoil',
                 key: 'dm7',
                 url: '/recoil'
+            },
+            {
+                title: 'Freeze',
+                pinyin: 'freeze',
+                key: 'dm8',
+                url: '/freeze'
             }
         ]
     }

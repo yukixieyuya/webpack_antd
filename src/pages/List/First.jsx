@@ -6,6 +6,9 @@ export default props => {
     const onChange = (date, dateString) => {
         // setData(dateString)
     }
+    const useChange= () => {
+
+    }
     return (
         <div>
             <DatePicker onChange={onChange} />

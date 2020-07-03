@@ -40,6 +40,11 @@ module.exports = merge(common,{
                 target: 'http://music.163.com',
                 pathRewrite: {'^/douban' : ''},
                 secure: false //接受https的代理
+            },
+            '/weiyinfu': {
+                target: 'https://github.com',
+                pathRewrite: {'^/weiyinfu' : ''},
+                secure: false //接受https的代理
             }
         },
 
