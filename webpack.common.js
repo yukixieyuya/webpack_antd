@@ -118,7 +118,7 @@ module.exports={
         new webpack.ProvidePlugin({//设置公共模块的自动加载
             // $: 'jquery',
             _: 'lodash',
-            // axios:'axios'
+            axios:'axios'
         })
     ]
 };

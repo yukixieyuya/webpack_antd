@@ -78,5 +78,19 @@ export const menus = [
                 url: '/freeze'
             }
         ]
+    },
+    {
+        title: 'Hooks',
+        pinyin: 'Hooks',
+        key: 's5',
+        icon: 'WindowsOutlined',
+        items: [
+            {
+                title: '封装hooks',
+                pinyin: 'hooks',
+                key: 'dm1',
+                url: '/hooks'
+            }
+        ]
     }
 ];

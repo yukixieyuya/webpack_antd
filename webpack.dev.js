@@ -32,20 +32,25 @@ module.exports = merge(common,{
         overlay: true,//浏览器中显示全屏覆盖层。显示编译器错误
 
         proxy: {//多个代理
-            '/': {
-                target: 'http://localhost:10000',
-                // pathRewrite: {'^/api' : ''}
-            },
-            '/douban': {
-                target: 'http://music.163.com',
-                pathRewrite: {'^/douban' : ''},
-                secure: false //接受https的代理
-            },
+            // '/': {
+            //     target: 'http://localhost:10000',
+            //     // pathRewrite: {'^/api' : ''}
+            // },
+            // '/douban': {
+            //     target: 'http://music.163.com',
+            //     pathRewrite: {'^/douban' : ''},
+            //     secure: false //接受https的代理
+            // },
             '/weiyinfu': {
                 target: 'https://github.com',
-                pathRewrite: {'^/weiyinfu' : ''},
-                secure: false //接受https的代理
-            }
+                // pathRewrite: {'^/weiyinfu' : ''},
+                secure: true //接受https的代理
+            },
+            '/api': {
+                target: 'http://106.14.151.227:3000',
+                // changeOrigin: true,
+                // pathRewrite: {'^/api' : '/'}
+            },
         },
 
         watchContentBase: true, //监听public下的文件变动
