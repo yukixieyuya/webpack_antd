@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Button} from 'antd';
 import request from '../../plugins/Fetch';
 import cheerio from 'cheerio';
+import axios from "axios";
 export default props => {
     const obj2 = {
         internal: {}
