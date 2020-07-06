@@ -43,13 +43,30 @@ module.exports = merge(common,{
             // },
             '/weiyinfu': {
                 target: 'https://github.com',
+                // port: 80,
+                // ingorePath 默认即为 false, 注释掉也可以
+                // ingorePath: false,
+                // changeOrigin是关键，如果不加这个就无法跳转请求
+                changeOrigin: true,
                 // pathRewrite: {'^/weiyinfu' : ''},
-                secure: true //接受https的代理
+                secure: true //接受https的代理。。。 因为使用的是https，会有安全校验，所以设置secure为false
             },
             '/api': {
                 target: 'http://106.14.151.227:3000',
                 // changeOrigin: true,
                 // pathRewrite: {'^/api' : '/'}
+            },
+            '/v1': {
+                target: 'https://api.doctorxiong.club',
+                changeOrigin: true,
+                // pathRewrite: {'^/api' : '/'}
+                secure: false //接受https的代理
+            },
+            '/': {
+                target: 'http://fund.eastmoney.com',
+                changeOrigin: true,
+                // pathRewrite: {'^/api' : '/'}
+                secure: true //接受https的代理
             },
         },
 

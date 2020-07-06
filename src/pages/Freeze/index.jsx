@@ -14,13 +14,16 @@ export default props => {
     let deep = null;
     useEffect(() => {
         deep = _.cloneDeep(state);
-        console.log(axios)
-        axios.get('/api/home').then(res => {
-            console.log(res.data)
-        })
+        // console.log(axios)
+        // axios.get('/v1/fund/position?code=003634').then(res => {
+        //     console.log(res.data)
+        // })
         axios.get("/weiyinfu?tab=repositories").then(resp => {
+            // console.log(resp.data)
+
             var $ = cheerio.load(resp.data)
             var lis = $("#user-repositories-list li")
+            // console.log(lis)
             var repos = []
             for (var i = 0; i < lis.length; i++) {
                 var li = lis.eq(i)
@@ -33,18 +36,48 @@ export default props => {
                     fork: li.find(".muted-link.mr-3").eq(1).text().trim(),
                     forkedFrom: li.find(".f6.text-gray.mb-1 a").text().trim()
                 }
+                console.log(li.find("h3 a"))
+                repos.push(repo)
+            }
+            // console.log(repos)
+            // console.log(123)
+        })
+        axios.get("/fund.html").then(resp => {
+            // console.log(resp.data)
+            var $ = cheerio.load(resp.data)
+            var trs = $("#tableDiv tr")
+            // console.log(trs)
+            var repos = []
+            for (var i = 0; i < trs.length; i++) {
+                var tr = trs.eq(i)
+                console.log(tr.find(".tol nobr a").eq(0).attr("title"))
+                var repo = {
+                    index: tr.find(".xh").text().trim(),
+                    // url: tr.find("td a").attr("href").trim(),
+                    code: tr.find(".bzdm").text().trim(),
+                    dwjz: tr.find(".dwjz").text().trim(),
+                    ljjz: tr.find(".ljjz").text().trim(),
+                    rzzz: tr.find(".rzzz").text().trim(),
+                    rzzl: tr.find(".rzzl").text().trim(),
+                    // name: tr.find(".tol nobr a").attr("href").trim()
+                    // repoDesc: tr.find("p").text().trim(),
+                    // language: tr.find("[itemprop=programmingLanguage]").text().trim(),
+                    // star: tr.find(".muted-link.mr-3").eq(0).text().trim(),
+                    // fork: tr.find(".muted-link.mr-3").eq(1).text().trim(),
+                    // forkedFrom: tr.find(".f6.text-gray.mb-1 a").text().trim()
+                }
                 repos.push(repo)
             }
             console.log(repos)
+            // console.log(456)
         })
-
         // request.get('/weiyinfu?tab=repositories').then(res => {
         //     console.log(res)
         // })
-        console.log(deep, 'deep')
+        // console.log(deep, 'deep')
     }, [])
 
-    console.log(state, 'state')
+    // console.log(state, 'state')
     // console.log(deep == state);
     // 深冻结函数.
     function deepFreeze(obj) {
@@ -68,7 +101,7 @@ export default props => {
 
     // deepFreeze(obj2);
     obj2.internal.a = 'anotherValue';
-    console.log(obj2)
+    // console.log(obj2)
     const onClick = () => {
         setState({
             c: 11
