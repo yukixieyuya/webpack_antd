@@ -8,6 +8,7 @@ import Bizcharts from "../pages/Bizcharts";
 import Recoil from "../pages/Recoil";
 import Freeze from "../pages/Freeze";
 import Hooks from "../pages/Hooks";
+import Icon from "../pages/Icon";
 const routes = new Routes({
     demo1: {
         url: '/',
@@ -54,6 +55,11 @@ const routes = new Routes({
         url: '/',
         title: 'hooks',
         component: Hooks
+    },
+    icon: {
+        url: '/',
+        title: 'icon',
+        component: Icon
     },
 });
 const routeKeys = Object.keys(routes);

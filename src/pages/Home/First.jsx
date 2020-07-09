@@ -86,7 +86,7 @@ class First extends React.Component{
                 <Button onClick={() => this.props.history.push(routes.test.path)}>子页面二</Button>
                 <Divider />
                 <Card>
-                    <HooksCheckBox name="value" isCancel={true} options={options} value={this.state.value} onChange={this.onChangeCheckBoxPanel}/>
+                    <HooksCheckBox name="value" isCancel={true} options={options} value={this.state.value} onChange={this.onChangeCheckBoxPanel} />
                 </Card>
             </div>
         )

@@ -13,6 +13,8 @@ import {
     Guide,
     Shape,
 } from "bizcharts";
+import {routes} from "./routes";
+import {Button} from 'antd'
 export default props => {
     const [data, setData] = useState('');
     let dv;
@@ -70,6 +72,7 @@ export default props => {
                 </View>
             </Chart> : null
         }
+        <Button onClick={() => props.history.push(routes.arc1.path)}>下一个</Button>
         </div>
 
     )

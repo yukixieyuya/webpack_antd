@@ -61,6 +61,7 @@ export class Routes {
         Object.getOwnPropertyNames(routes).forEach(key => {
             this[key] = {
                 title: routes[key].title,
+                exact: routes[key].exact,
                 url: () => combineUrl(this.pageUrl, routes[key].url),
                 format: (...args) => combineUrl(this.pageUrl, (routes[key].format ? stringFormat(routes[key].format, ...args) : routes[key].url)),
                 component: () => {

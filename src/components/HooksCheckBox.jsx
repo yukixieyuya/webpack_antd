@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Checkbox} from 'antd';
 export const HooksCheckBox = props => {
+    const allCheckText = props.allCheckText ? props.allCheckText : "全选"
+    const cancelCheckText = props.cancelCheckText ? props.cancelCheckText : "取消"
     const checkObj = props.options.map(c => ({
         [c.value]: false
     }));
@@ -132,23 +134,23 @@ export const HooksCheckBox = props => {
                     <Checkbox
                         indeterminate={state.indeterminate} //
                         onChange={onChangeAllCheck}
-                        checked={state.allBtn}> //
+                        checked={state.allBtn}>
                         <b>
-                            {props.allCheckText}
+                            {allCheckText}
                         </b>
                     </Checkbox>
                     {
                         props.isCancel ? <Checkbox
                             onChange={onChangeCancelCheck}
-                            checked={state.cancelBtn}> //
+                            checked={state.cancelBtn}>
                             <b>
-                                {props.cancelCheckText}
+                                {cancelCheckText}
                             </b>
                         </Checkbox> : null
                     }
                 </div>
                 {options.map(c => (<div key={c.value} >
-                    <Checkbox onChange={e => onChangeCheck(e, c.value)} checked={state.isCheck[c.value]}> //
+                    <Checkbox onChange={e => onChangeCheck(e, c.value)} checked={state.isCheck[c.value]}>
                         {c.text}
                     </Checkbox>
                 </div>))}

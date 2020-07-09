@@ -16,6 +16,7 @@ export default props => {
             </Col>
             <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 1 }}>
                 <Button type="primary" onClick={() => props.history.push(routes.arc.path)}>弧形链接图</Button>
+                <Button onClick={() => props.history.push(routes.arc1.path)}>下一个</Button>
             </Col>
         </Row>
     )

@@ -88,8 +88,22 @@ export const menus = [
             {
                 title: '封装hooks',
                 pinyin: 'hooks',
-                key: 'dm1',
+                key: 'dm9',
                 url: '/hooks'
+            }
+        ]
+    },
+    {
+        title: '图标',
+        pinyin: 'tubiao',
+        key: 's6',
+        icon: 'WindowsOutlined',
+        items: [
+            {
+                title: 'icon',
+                pinyin: 'icon',
+                key: 'ds1',
+                url: '/icon'
             }
         ]
     }

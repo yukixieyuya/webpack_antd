@@ -43,7 +43,7 @@ export default props => {
             // console.log(123)
         })
         axios.get("/fund.html").then(resp => {
-            // console.log(resp.data)
+            // console.log(resp.data.text.encode('iso-8859-1').decode('gbk'))
             var $ = cheerio.load(resp.data)
             var trs = $("#tableDiv tr")
             // console.log(trs)
