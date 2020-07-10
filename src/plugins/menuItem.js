@@ -53,7 +53,7 @@ export const menus = [
         items: [
             {
                 title: '图表库',
-                pinyin: 'demo12',
+                pinyin: '123123',
                 key: 'dm6',
                 url: '/bizcharts'
             }

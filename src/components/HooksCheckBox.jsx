@@ -129,7 +129,6 @@ export const HooksCheckBox = props => {
     const {options = []} = props;
     return (
             <div>
-                1234
                 <div style={{borderBottom: '1px solid #E9E9E9'}}>
                     <Checkbox
                         indeterminate={state.indeterminate} //

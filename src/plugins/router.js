@@ -13,7 +13,6 @@ const routes = new Routes({
     demo1: {
         url: '/',
         title: '主页',
-        exact: true,
         component: Home
     },
     demo: {
