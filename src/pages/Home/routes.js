@@ -14,6 +14,11 @@ export const routes = new Routes({
         title: '滑动输入条',
         component: Two
     },
+    ck: {
+        url: '/check/ck',
+        title: 'CK',
+        component: Two
+    },
     test: {
         url: '/test',
         title: '穿梭框',

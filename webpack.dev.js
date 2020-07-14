@@ -52,8 +52,8 @@ module.exports = merge(common,{
                 secure: true //接受https的代理。。。 因为使用的是https，会有安全校验，所以设置secure为false
             },
             '/api': {
-                target: 'http://106.14.151.227:3000',
-                // changeOrigin: true,
+                target: 'http://localhost:3000',
+                changeOrigin: true,
                 // pathRewrite: {'^/api' : '/'}
             },
             '/v1': {

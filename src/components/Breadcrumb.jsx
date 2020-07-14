@@ -17,6 +17,18 @@ export default props => {
                 breadcrumbs.push(<Breadcrumb.Item key={'home'}><Link to={bread.url}>{bread.title}</Link></Breadcrumb.Item>)
             }
         });
+        // const itemBread = routes.find(c => c.path === location.pathname);
+        // if(itemBread) {
+        //     console.log(itemBread.title, location.pathname, routes)
+        //
+        //     pathArr.pop();
+        //     const newPath = pathArr.join('/');
+        //     const newItem = routes.find(c => c.path === newPath);
+        //     if(itemBread.title && newItem)
+        //         breadcrumbs.push(<Breadcrumb.Item key={'home'}><Link to={newItem.url}>{newItem.title}</Link></Breadcrumb.Item>)
+        //     if(newItem)
+        //         breadcrumbs.push(<Breadcrumb.Item key={'home'}>{itemBread.title}</Breadcrumb.Item>)
+        // }
         const itemBread = routes.find(c => c.path === location.pathname);
         if(itemBread) {
             if(itemBread.title)
