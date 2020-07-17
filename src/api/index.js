@@ -2,7 +2,7 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const reload = require('./reload');
 const path = require('path');
-
+const express = require('express');
 const filenames = fs.readdirSync(__dirname)
     .map(filename => filename.split('.')[0])
     .filter(filename =>
@@ -12,7 +12,8 @@ const filenames = fs.readdirSync(__dirname)
         filename !== 'localtest'
     );
 
-module.exports = app => {
+module.exports = () => {
+    let app = express();
     // 本地联调代理
     // app.use([
     //     '/dms/afterSales/api/v1',
@@ -102,6 +103,6 @@ module.exports = app => {
 
     filenames.forEach(filename => {
         const filePath = path.join(__dirname, `./${filename}.js`);
-        app.use(`/dms/afterSales/api/v1/${filename}`, reload(filePath));
+        app.use(`/api/${filename}`, reload(filePath));
     });
 };

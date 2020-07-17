@@ -2,6 +2,9 @@ let path = require('path');
 
 const merge = require('webpack-merge');
 const common = require('./webpack.common');
+
+const apiMocker = require('webpack-api-mocker')
+let apiDomainMap =
 module.exports = merge(common,{
 
     mode: 'development',
@@ -14,7 +17,20 @@ module.exports = merge(common,{
         port: 6236,
         open: true,
         // hot:true,
+        before (app) {
+            // if(process.env.MOCK) {
+                console.log(app)
+                apiMocker(app, path.resolve(__dirname, 'src/mocker/index.js'), {
+                    // proxy: 'http://localhost:6236',
+                    changeHost: true
+                })
+            // apiMocker(app, path.resolve(__dirname, 'src/api/index.js'), {
+            //     // proxy: 'http://localhost:6236',
+            //     changeHost: true
+            // })
+            // }
 
+        },
         historyApiFallback: true, //打开可通过url访问目标路由
 
         // compress:true,//一切服务都启用 gzip 压缩
@@ -51,11 +67,11 @@ module.exports = merge(common,{
                 // pathRewrite: {'^/weiyinfu' : ''},
                 secure: true //接受https的代理。。。 因为使用的是https，会有安全校验，所以设置secure为false
             },
-            '/api': {
-                target: 'http://localhost:3000',
-                changeOrigin: true,
-                // pathRewrite: {'^/api' : '/'}
-            },
+            // '/api': {
+            //     target: 'http://localhost:3000',
+            //     changeOrigin: true,
+            //     // pathRewrite: {'^/api' : '/'}
+            // },
             '/v1': {
                 target: 'https://api.doctorxiong.club',
                 changeOrigin: true,

@@ -9,6 +9,7 @@ import Recoil from "../pages/Recoil";
 import Freeze from "../pages/Freeze";
 import Hooks from "../pages/Hooks";
 import Icon from "../pages/Icon";
+import keepAlive from "../pages/keepAlive";
 const routes = new Routes({
     demo1: {
         url: '/',
@@ -59,6 +60,11 @@ const routes = new Routes({
         url: '/',
         title: 'icon',
         component: Icon
+    },
+    keepAlive: {
+        url: '/',
+        title: 'keepAlive',
+        component: keepAlive
     },
 });
 const routeKeys = Object.keys(routes);

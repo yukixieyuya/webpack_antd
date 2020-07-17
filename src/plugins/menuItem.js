@@ -106,5 +106,19 @@ export const menus = [
                 url: '/icon'
             }
         ]
+    },
+    {
+        title: 'react-activation',
+        pinyin: 'reactActivation',
+        key: 's7',
+        icon: 'WindowsOutlined',
+        items: [
+            {
+                title: 'keep-alive',
+                pinyin: 'keepAlive',
+                key: 'ds2',
+                url: '/keepAlive'
+            }
+        ]
     }
 ];
