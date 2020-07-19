@@ -12,19 +12,19 @@ class App extends React.Component {
                             if(c.exact)
                                 return <Route path={c.node} exact key={key}
                                     render={props => {
-                                    const Component =c.component();
-                                    return (
-                                        <Component {...props}/>
-                                    )}
+                                        const Component =c.component();
+                                        return (
+                                            <Component {...props}/>
+                                        )}
                                     }/>;
                             else
                                 return <Route path={c.node} key={key}
-                                              render={props => {
-                                                  const Component =c.component();
-                                                  return (
-                                                      <Component {...props}/>
-                                                  )}
-                                              }/>;
+                                    render={props => {
+                                        const Component =c.component();
+                                        return (
+                                            <Component {...props}/>
+                                        )}
+                                    }/>;
                         })
                     }
                 </Switch>

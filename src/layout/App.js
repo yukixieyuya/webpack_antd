@@ -52,6 +52,7 @@ class App extends React.Component {
         });
     };
     onSelectedKey = options => {
+        if(options.key === this.state.selectedKey) return;
         const keyPath = options.keyPath[options.keyPath.length - 1];
         window.localStorage.setItem('keyPath', keyPath);
         this.setState({

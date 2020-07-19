@@ -1,7 +1,7 @@
 
 const path = require('path');
 
-const baseUrl = path.resolve(__filename).split('\\src')[1].replace(/\\/g, '/').split('.')[0];
+const baseUrl = path.resolve(__filename).split('\\src')[1].replace(/\\/g, '/').split('.')[0]
 
 module.exports = router => {
     router.get(`${baseUrl}/uuu`, function (req,res) {
